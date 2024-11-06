@@ -1,0 +1,201 @@
+nav {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #6b8e23;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+h1, h2{
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.etudiant-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #a39e80;
+    color: #161616;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boutons-action {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.boutons-action a {
+    text-decoration: none;
+    background-color: #888a25;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boutons-action a:hover {
+    background-color: #6f6f6f;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #888a25;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6f6f6f;
+}
+
+
+
+/* Pagination styles */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.pagination nav {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination .page-item {
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+    background-color: #6b8e23;
+    color: #fff;
+}
+
+.pagination .active .page-link {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination .disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+}
+
+
+svg {
+    display: none;
+}
+
+
+/* Edit page */
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+
+form h2 {
+    color: #4a4a32;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4a4a32;
+    font-weight: bold;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6b8e23;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+form button[type="submit"]:hover {
+    background-color: #556b2f;
+}
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+form div:last-child {
+    margin-bottom: 0;
+}
