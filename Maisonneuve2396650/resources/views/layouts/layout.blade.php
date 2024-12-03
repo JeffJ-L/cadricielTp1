@@ -12,7 +12,7 @@
     <nav>
         <a href="{{ route('etudiant.index') }}">Accueil</a>
         <a href="{{ route('etudiant.create') }}">Ajouter</a>
-        <a href="/Connexion">Connexion</a>
+        <a href="{{ route('login') }}">Connexion</a>
     </nav>
 
     @yield('content')
