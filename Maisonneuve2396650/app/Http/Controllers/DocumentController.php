@@ -38,7 +38,7 @@ class DocumentController extends Controller
             'language' => 'required|in:en,fr',
         ]);
 
-        $filePath = $request->file('file')->store('documents');
+        $filePath = $request->file('file')->store('documents', 'public');
 
         Document::create([
             'title' => $request->title,
