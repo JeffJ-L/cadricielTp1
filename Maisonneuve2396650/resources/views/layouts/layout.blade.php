@@ -10,10 +10,28 @@
 </head>
 <body>
     <nav>
-        <a href="{{ route('etudiant.index') }}">Accueil</a>
-        <a href="{{ route('etudiant.create') }}">Ajouter</a>
-        <a href="{{ route('login') }}">Connexion</a>
+        <a href="{{ route('welcome') }}">Accueil</a>
+
+        @if (Auth::check())
+            <a href="{{ route('documents.index') }}">Répertoire</a>
+            <a href="{{ route('logout') }}">Deconnexion</a>
+        @else
+            <a href="{{ route('login') }}">Connexion</a>
+        @endif
+
+        <div class="language-select">
+            <label for="language">Language</label>
+            <select id="language" name="language">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
     </nav>
+    @if (Auth::check())
+        <div class="user-info">
+            <span><strong>{{ Auth::user()->name }}</strong></span>
+        </div>
+    @endif
 
     @yield('content')
 

@@ -22,4 +22,13 @@ class Etudiant extends Model
     {
         return $this->belongsTo(Ville::class);
     }
+
+    public function articles(){
+        return $this->hasMany(Article::class);
+    }
+
+    public function user(){
+
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
